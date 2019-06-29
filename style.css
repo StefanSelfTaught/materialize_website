@@ -1,8 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background: url(img/man.jpg);
   background-size: cover;
   background-position: center;
   height: 120vh;
+}
+
+.parallax-container {
+  height: 400px;
 }
 
 .section {
