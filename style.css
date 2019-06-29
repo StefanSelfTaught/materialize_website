@@ -5,6 +5,11 @@ header {
   height: 120vh;
 }
 
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
 @media screen and (max-width: 670px){
   header {
     height: 45vh;
