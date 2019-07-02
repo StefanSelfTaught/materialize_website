@@ -136,7 +136,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit et sapiente nemo aut.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit et sapiente nemo aut.</p>
       </div>
-      <form action="#" class="col s12 l5 offset-l2">
+      <form action="" class="col s12 l5 offset-l2">
         <div class="input-field">
             <i class="material-icons prefix">email</i>
             <input id="email" type="email" class="validate">
@@ -167,7 +167,7 @@
             </p>
         </div>
         <div class="input-field center">
-          <button class="btn">Submit</button>
+          <button class="indigo btn waves-effect waves-light">Submit</button>
         </div>
      </form>
     </div>
@@ -194,9 +194,25 @@
       </div>
     </div>
     <div class="footer-copyright grey darken-4">
-      <div class="container center-align">&copy; 2019 Brand Name</div>
+      <div class="container center-align">
+        &copy; 2019 Brand Name
+        <a class="indigo waves-effect waves-light btn-small modal-trigger" href="#modal1">Terms & Conditions</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Terms & Conditions</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia mollitia minima debitis atque maiores, odit in fugiat omnis fuga, cupiditate voluptate nihil voluptatem unde, ex est at consequuntur vero non!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="modal-close waves-effect waves-green btn-flat lighten-1 white-text indigo">Agree</a>
+        <a href="#" class="modal-close waves-effect waves-green btn-flat lighten-1 white-text indigo">Disagree</a>
+      </div>
+  </div>
+
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -210,6 +226,7 @@
       $('.datepicker').datepicker();
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy();
+      $('.modal').modal();
     });
   </script>
 </body>
