@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   background: url(img/man.jpg);
   background-size: cover;
   background-position: center;
-  height: 120vh;
+  height: 100vh;
+}
+
+.brand-logo {
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 
 .parallax-container {
   height: 300px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .tabs .indicator {
@@ -30,4 +47,18 @@ header {
   header {
     height: 45vh;
   }
+}
+
+.links::after {
+  content: '';
+  display: block;
+  width: 0; 
+  height: 2px;
+  background: #ffffff;
+  transition: all .2s ease;
+}
+
+.links:hover::after {
+   width: 100%;
+   transition: all .3s ease;
 }
