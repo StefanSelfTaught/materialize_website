@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <title>Photo Logo</title>
-</head>
+</head> 
 <body>
 
   <!-- navbar -->
@@ -56,6 +56,12 @@
         <h2 class="white-text msg">Hi, I am a photographer and I also enjoy editing.</h2>
         <a class="animated infinite pulse indigo hire waves-light btn btn-large">Hire me!</a>
       </div>
+    </div>
+    <!-- <i class="animated 2s bounce fas down fa-angle-double-down"></i> -->
+    <div class="tooltipped scroll-down" data-position="top" data-tooltip="Find out more">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>
 
@@ -279,6 +285,9 @@
       });
       $('.modal').modal();
       $('.collapsible').collapsible();
+      $('.scroll-down').click(() => {
+      $('html, body').animate({scrollTop: $('section#photos').offset().top }, 'slow');
+    });
     });
   </script>
 </body>
