@@ -4,6 +4,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 header {
   box-sizing: border-box;
@@ -18,9 +21,9 @@ nav {
   background: linear-gradient( rgba(63, 80, 252, 0.1), rgba(63, 80, 252, 0.2));
 }
 
-button {
+/* button {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-}
+} */
 
 .brand-logo {
   font-family: 'Montserrat';
@@ -108,9 +111,18 @@ button {
   }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 600px){
   header {
-    height: 45vh;
+    height: 69vh;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .msg {
+    font-size: 39px;
+  }
+  .hire {
+    font-size: 14px;
   }
 }
 
