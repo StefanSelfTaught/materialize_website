@@ -9,15 +9,13 @@ $(document).ready(function(){
   $('.datepicker').datepicker();
   $('.tooltipped').tooltip();
   $('.scrollspy').scrollSpy();
-  $('.carousel').carousel({
-    padding: 100,
-  });
+  $('.carousel').carousel();
   $('.modal').modal();
   $('.collapsible').collapsible();
   $('.scroll-down').click(() => {
   $('html, body').animate({scrollTop: $('section#photos').offset().top }, 'slow');
 });
-  const typed = new Typed('#typed' , {
+  const typed = new Typed('#typed', {
     strings:["Hi, I am a professional photographer and editor."],
     backSpeed: 40,
     typeSpeed: 40,
