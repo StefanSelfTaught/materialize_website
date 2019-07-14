@@ -19,11 +19,27 @@ header {
 
 nav {
   background: linear-gradient( rgba(63, 80, 252, 0.1), rgba(63, 80, 252, 0.2));
+  transition: all .3s ease-in-out;
 }
 
-/* button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-} */
+.sidenav {
+  background: linear-gradient(-180deg, rgb(54, 0, 51), rgb(20, 55, 90));
+}
+
+.sidenav li a {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.sidenav li:hover {
+  transform: translateX(7px);
+  opacity: 1;
+}
+
+.sidenav li {
+  transition: all .2s ease;
+  opacity: 0.9;
+}
 
 .brand-logo {
   font-family: 'Montserrat';
@@ -113,13 +129,13 @@ nav {
 
 @media screen and (max-width: 600px){
   header {
-    height: 69vh;
+    height: 75vh;
   }
   .scroll-down {
     display: none;
   }
   .msg {
-    font-size: 39px;
+    font-size: 33px;
   }
   .hire {
     font-size: 14px;

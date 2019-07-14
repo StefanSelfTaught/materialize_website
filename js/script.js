@@ -3,7 +3,6 @@ AOS.init({
 })
 $(document).ready(function(){
   $('.sidenav').sidenav();
-  $('.materialboxed').materialbox();
   $('.parallax').parallax();
   $('.tabs').tabs();
   $('.datepicker').datepicker();
@@ -11,6 +10,7 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('.carousel').carousel();
   $('.modal').modal();
+  $('.materialboxed').materialbox();
   $('.collapsible').collapsible();
   $('.scroll-down').click(() => {
   $('html, body').animate({scrollTop: $('section#photos').offset().top }, 'slow');
@@ -21,5 +21,12 @@ $(document).ready(function(){
     typeSpeed: 40,
     smartBackspace: true,
     showCursor: false
+  })
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 750){
+      $('nav').addClass('indigo');
+    } else {
+      $('nav').removeClass('indigo');
+    }
   })
 });
