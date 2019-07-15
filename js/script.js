@@ -24,9 +24,9 @@ $(document).ready(function(){
   })
   $(window).scroll(function(){
     if($(window).scrollTop() > 750){
-      $('nav').addClass('indigo');
+      $('nav').addClass('deep-purple accent-3');
     } else {
-      $('nav').removeClass('indigo');
+      $('nav').removeClass('deep-purple accent-3');
     }
   })
 });
